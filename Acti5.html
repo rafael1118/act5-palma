@@ -1,0 +1,126 @@
+<html>
+  <head>
+    <title>Integrating Select2 Library</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+   
+  </head>
+  <style>
+    body {
+      background-color: #F8F8FF;
+      
+    }
+    form {
+      background-color: whitesmoke;
+      width: 70%;
+      margin: 0 auto;
+      padding: 50px;
+      border-radius: 10px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    iframe {
+      border-radius: 10px;
+      box-shadow: 0 10px 30px grey;
+      border: none;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-style:Tahoma;
+      color: black;
+    
+    }
+    .js-example-basic-multiple {
+      width: 100%;
+    }
+    option, select {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    label {
+      margin: 10px 0px;
+    }
+    input {
+      height: 35px;
+      font-size: 15px;
+      width: 100%;
+      border-radius: 5px;
+      border: solid grey 1px;
+      padding: 0 10px;
+    }
+    /* select {
+      margin: 15px 0px;
+    } */
+    button {
+      padding: 10px;
+      background-color: #0093E9;
+      width: 100%;
+      color: white;
+      font-size: larger;
+      border-radius: 5px;
+      margin-top: 15px;
+      border:none;
+    }
+    li {
+      list-style: none;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    b {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    ul {
+      text-align: center;
+    }
+  </style>
+  <body>
+    <h1>Integrating Select2 Library</h1>
+    <br>
+    <br>
+    <div>
+      <form>
+        <fieldset style="background: #f6f8ff; border: 2px solid #4238ca; border-radius: 10px;">
+          <legend>Beautiful Places on Earth</legend>
+
+   
+
+          <span>
+          <label for="gender">7 Wonders of Earth</label>
+          <select class="js-example-basic-multiple" name="states[]" multiple="multiple" id="gender">
+            <option value="thecolosseum">
+			The Colosseum</option>
+            <option value="greatwallofchina
+			">Great Wall of China </option>
+            <option value="tahjmahal
+			">Tahj Mahal </option>
+			<option value="christtheredeemer
+			">Christ the Redeemer</option>
+			<option value="machupicchu
+			">Machu picchu</option>
+			<option value="chickenitza
+			">Chichen Itza</option>
+			<option value="petra
+			">Petra</option>
+          
+           
+          </select>
+          </span>
+          <button type="submit">Save Information</button>
+        </fieldset>
+      </form>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>  
+    
+    </div>
+    <script type="text/javascript">
+      $(document).ready(function() {
+          $('.js-example-basic-multiple').select2();
+      });
+    </script>
+    
+    
+  </body>
+</html>
